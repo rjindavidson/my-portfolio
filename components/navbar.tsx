@@ -9,7 +9,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     return (
-        <nav className="w-full fixed bg-secondary bg-slate-900 text-white flex justify-between items-center p-4 rounded-xl shadow-sm">
+        <nav className="w-full top-0 sticky bg-secondary bg-slate-900 text-white flex justify-between items-center p-4 shadow-sm">
             <div>
                 <Button variant="ghost">
                     <Link className="font-semibold text-xl" href="#home">
