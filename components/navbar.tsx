@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="w-full fixed bg-secondary bg-slate-900 text-white flex justify-between items-center p-4 rounded-xl shadow-sm">
             <div>
                 <Button variant="ghost">
-                    <Link href="#home">
+                    <Link className="font-semibold text-xl" href="#home">
                         Ryan Davidson
                     </Link>
                 </Button>
@@ -23,7 +23,9 @@ const Navbar = () => {
                     </Link>
                 </Button>
                 <Button variant="ghost">
-                    About
+                    <Link href="#">
+                        Photos
+                    </Link>
                 </Button>
                 <Button variant="ghost">
                     Contact

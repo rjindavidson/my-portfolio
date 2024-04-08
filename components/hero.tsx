@@ -16,7 +16,7 @@ interface HeroSectionProps {
 const HeroSection = ({ title }: HeroSectionProps) => {
     return (
         <h2 className="w-full flex justify-evenly items-center p-4 text-slate-50" id="home">
-            <div className="p-4 w-full xl:w-1/3">
+            <div className="p-4 w-full text-center lg:text-start xl:w-1/3">
                 <div className="text-5xl font-bold tracking-wide pb-2">
                     {title}
                 </div>
