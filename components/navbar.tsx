@@ -17,7 +17,7 @@ const Navbar = () => {
                     </Link>
                 </Button>
             </div>
-            <div>
+            <div className="flex flex-row-reverse">
                 <div className="md:hidden">
                     <button onClick={() => setNavbar(!navbar)}>
                         {navbar ? <MdClose size={30} /> : <MdMenu size={30}/>}
