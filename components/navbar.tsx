@@ -2,17 +2,21 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
+    const pathname = usePathname();
+    const isHome = pathname.endsWith('/')
+
     return (
         <nav className="w-full top-0 sticky bg-secondary bg-slate-900 text-white flex justify-between items-center p-4 shadow-sm">
             <div>
                 <Button variant="ghost">
-                    <Link className="font-semibold text-xl" href="#home">
+                    <Link className="font-semibold text-xl" href={`${isHome ? "#home" : "/"}`}>
                         Ryan Davidson
                     </Link>
                 </Button>
@@ -25,17 +29,17 @@ const Navbar = () => {
                 </div>
                 <div className={`${navbar ? "block" : "hidden"} md:block`}>
                     <Button variant="ghost">
-                        <Link href="#home">
+                        <Link href={`${isHome ? "#home" : "/"}`}>
                             Home
                         </Link>
                     </Button>
                     <Button variant="ghost">
-                        <Link href="#projects">
+                        <Link href={`${isHome ? "#projects" : "/#projects"}`}>
                             Projects
                         </Link>
                     </Button>
                     <Button variant="ghost">
-                        <Link href="#">
+                        <Link href="/photos">
                             Photos
                         </Link>
                     </Button>

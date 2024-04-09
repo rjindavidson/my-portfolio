@@ -19,10 +19,11 @@ const ProjectSection = () => {
                     Projects
                 </div>
             </div>
+            <hr className="w-6 h-1 mx-auto my-4 bg-yellow-300 border-0 rounded"></hr>
             <div className="flex justify-evenly pt-12">
                 <Card className="w-5/12">
                     <CardHeader>
-                        <CardTitle>Authentication Web App</CardTitle>
+                        <CardTitle className="text-xl">Authentication Web App</CardTitle>
                         <CardDescription>Web app created to include all the common securities. Email verification, 2FA,
                             Password Reset, Session Tokens, and Protected Routing
                         </CardDescription>
@@ -31,14 +32,14 @@ const ProjectSection = () => {
                         <Image src={authAppImage} alt="auth app" width={400} height={400}/>
                     </CardContent>
                     <CardFooter className="flex items-center justify-center">
-                        <Button>
+                        <Button size={"lg"}>
                             <Link href="https://github.com/rjindavidson/next-auth/tree/main">GitHub</Link>
                         </Button>
                     </CardFooter>
                 </Card>
                 <Card className="w-5/12">
                     <CardHeader>
-                        <CardTitle>Full Stack E-commerce + Dashboard & CMS</CardTitle>
+                        <CardTitle className="text-xl">Full Stack E-commerce + Dashboard & CMS</CardTitle>
                         <CardDescription>Full stack application using Next.js, MySQL + Prisma, Stripe, and Next&apos;s
                             app router to create a functioning E-commerce web app
                         </CardDescription>
@@ -48,7 +49,7 @@ const ProjectSection = () => {
                         <Image src={authAppImage} alt="auth app" width={400} height={400}/>
                     </CardContent>
                     <CardFooter className="flex items-center justify-center">
-                        <Button>
+                        <Button size={"lg"}>
                             <Link href="https://github.com/rjindavidson/next-auth/tree/main">GitHub</Link>
                         </Button>
                     </CardFooter>
