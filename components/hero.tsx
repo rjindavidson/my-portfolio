@@ -16,7 +16,7 @@ interface HeroSectionProps {
 const HeroSection = ({ title }: HeroSectionProps) => {
     return (
         <section id="home">
-            <h2 className="w-full flex justify-evenly items-center p-4">
+            <h2 className="w-full flex justify-evenly items-center p-4 py-24">
                 <div className="p-4 w-full text-center lg:text-start xl:w-1/3">
                     <div className="text-5xl font-bold tracking-wide pb-2 text-slate-50">
                         {title}
@@ -44,7 +44,14 @@ const HeroSection = ({ title }: HeroSectionProps) => {
                     </div>
                 </div>
                 <div className="p-4 hidden md:block w-[400px] lg:w-[600px] xl:w-[800px]">
-                    <Image className="rounded-xl" src={pfp} alt="Portfolio Picture" width={800} height={800} />
+                    <Image
+                        className="rounded-xl"
+                        placeholder="blur"
+                        src={pfp} 
+                        alt="Portfolio Picture" 
+                        width={800} 
+                        height={800} 
+                    />
                 </div>
             </h2>
             <div className="flex justify-center items-center py-12">

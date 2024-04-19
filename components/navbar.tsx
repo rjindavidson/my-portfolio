@@ -13,7 +13,7 @@ const Navbar = () => {
     const isHome = pathname.endsWith('/')
 
     return (
-        <nav className="w-full top-0 sticky bg-secondary bg-slate-900 text-white flex justify-between items-center p-4 shadow-sm">
+        <nav className="w-full top-0 fixed bg-secondary bg-slate-900 text-white flex justify-between items-center p-4 shadow-sm">
             <div>
                 <Button variant="ghost">
                     <Link className="font-semibold text-xl" href={`${isHome ? "#home" : "/"}`}>
@@ -44,7 +44,9 @@ const Navbar = () => {
                         </Link>
                     </Button>
                     <Button variant="ghost">
-                        Contact
+                        <Link href="/contacts">
+                            Contact
+                        </Link>
                     </Button>
                 </div>
             </div>

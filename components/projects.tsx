@@ -24,12 +24,13 @@ const ProjectSection = () => {
                 <Card className="w-5/12">
                     <CardHeader>
                         <CardTitle className="text-xl">Authentication Web App</CardTitle>
-                        <CardDescription>Web app created to include all the common securities. Email verification, 2FA,
+                        <CardDescription>
+                            Web app created to include all the common securities. Email verification, 2FA,
                             Password Reset, Session Tokens, and Protected Routing
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="flex items-center justify-center">
-                        <Image src={authAppImage} alt="auth app" width={400} height={400}/>
+                        {/* <Image src={authAppImage} placeholder="blur" alt="auth app" width={400} height={400}/> */}
                     </CardContent>
                     <CardFooter className="flex items-center justify-center">
                         <Button size={"lg"}>
@@ -39,18 +40,18 @@ const ProjectSection = () => {
                 </Card>
                 <Card className="w-5/12">
                     <CardHeader>
-                        <CardTitle className="text-xl">Full Stack E-commerce + Dashboard & CMS</CardTitle>
-                        <CardDescription>Full stack application using Next.js, MySQL + Prisma, Stripe, and Next&apos;s
-                            app router to create a functioning E-commerce web app
+                        <CardTitle className="text-xl">Social Media App</CardTitle>
+                        <CardDescription>
+                            Twitter clone created to practice OOP and its design patterns: Observer, Iterator, and Visitor
+                            enabling users to follow and see followed messages
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="flex items-center justify-center">
                         {/* TODO: UPDATE APP IMAGE AND GITHUB HREF ONCE COMPLETED */}
-                        <Image src={authAppImage} alt="auth app" width={400} height={400}/>
                     </CardContent>
                     <CardFooter className="flex items-center justify-center">
                         <Button size={"lg"}>
-                            <Link href="https://github.com/rjindavidson/next-auth/tree/main">GitHub</Link>
+                            <Link href="https://github.com/rjindavidson/next-auth/tree/main">Unavailable</Link>
                         </Button>
                     </CardFooter>
                 </Card>
