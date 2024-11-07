@@ -2,6 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -41,11 +47,6 @@ const Navbar = () => {
                     <Button variant="ghost">
                         <Link href="/photos">
                             Photos
-                        </Link>
-                    </Button>
-                    <Button variant="ghost">
-                        <Link href="/contacts">
-                            Contact
                         </Link>
                     </Button>
                 </div>
