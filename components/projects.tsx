@@ -29,29 +29,23 @@ const ProjectSection = () => {
                             Password Reset, Session Tokens, and Protected Routing
                         </CardDescription>
                     </CardHeader>
-                    <CardContent className="flex items-center justify-center">
-                        {/* <Image src={authAppImage} placeholder="blur" alt="auth app" width={400} height={400}/> */}
-                    </CardContent>
                     <CardFooter className="flex items-center justify-center">
                         <Button size={"lg"}>
                             <Link href="https://github.com/rjindavidson/next-auth/tree/main">GitHub</Link>
                         </Button>
                     </CardFooter>
                 </Card>
-                <Card className="w-3/4 md:w-1/4">
+                <Card className="w-3/4 mb-4 md:w-1/4">
                     <CardHeader>
                         <CardTitle className="text-xl">Bobar</CardTitle>
                         <CardDescription>
-                            Web app created for my friend to order and list their favorite boba spots by geospatial data.
+                            Web app for my friend to order and list their favorite boba spots by geospatial data.
                             Can add and remove drinks and select options to be randomly selected!
                         </CardDescription>
                     </CardHeader>
-                    <CardContent className="flex items-center justify-center">
-                    <Link href="https://github.com/rjindavidson/next-auth/tree/main">GitHub</Link>
-                    </CardContent>
                     <CardFooter className="flex items-center justify-center">
                         <Button size={"lg"}>
-                            <Link href="https://github.com/rjindavidson/bobar/tree/main">Unavailable</Link>
+                            <Link href="https://github.com/rjindavidson/bobar/tree/main">GitHub</Link>
                         </Button>
                     </CardFooter>
                 </Card>
